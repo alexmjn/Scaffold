@@ -1,4 +1,4 @@
-name: Python application test with Github Actions
+name: Python 3.8
 on: [push]
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
     - name: Lint with Pylint
       run: |
         make lint
-    - name: Test with pytest
+    - name: Test with Pytest
       run: |
         make test
     - name: Format code with Python black
